@@ -1,0 +1,276 @@
+
+body {
+    background-color: #990000;
+    text-align: center;
+    font-family: 'Berkshire Swash', cursive;
+    font-family: 'Amatic SC', cursive;
+    font-size: 20px;
+}
+
+div.container {
+  background-color: #ffffff;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1200px;
+}
+
+header, main, footer {
+  padding: 15px;
+  margin: 15px;
+}
+
+
+header {
+  display: grid;
+  grid-column-gap: 15px;
+  grid-row-gap: 15px;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+    "logo"
+    "name"
+    "link-bar";
+}
+
+main {
+  display: grid;
+  grid-column-gap: 15px;
+  grid-row-gap: 15px;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+    "page-name"
+    "appetizers"
+    "soup_salad"
+    "Entrees"
+    "Desserts_drinks";
+}
+
+footer {
+  display: grid;
+  grid-column-gap: 15px;
+  grid-row-gap: 15px;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+    "social-M"
+    "contacts";
+}
+
+@media (min-width: 600px) {
+
+  header {
+    grid-template-columns: 1fr 4fr;
+    grid-template-areas:
+      "logo name"
+      "link-bar link-bar";
+  }
+
+  main {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+      "page-name page-name"
+      "appetizers appetizers"
+      "soup_salad soup_salad"
+      "Entrees Entrees"
+      "Desserts_drinks Desserts_drinks";
+  }
+
+  footer {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+    "social-M contacts";
+  }
+}
+
+@media (min-width: 900px) {
+  header {
+    grid-template-columns: 2fr 2fr 2fr;
+    grid-template-areas:
+      "logo logo name"
+      "link-bar link-bar link-bar";
+  }
+
+  main {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas:
+      "page-name page-name page-name"
+      "appetizers appetizers appetizers"
+      "soup_salad soup_salad Entrees"
+      "Desserts_drinks Desserts_drinks Desserts_drinks";
+  }
+
+  footer {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+    "social-M contacts";
+  }
+}
+
+div {
+  text-align: center;
+}
+
+main div {
+}
+
+div#logo {
+  grid-area: logo;
+}
+div#name {
+  grid-area: name;
+}
+
+div#page-name {
+  grid-area: page-name;
+}
+
+div#link-bar {
+  grid-area:link-bar;
+}
+
+div#social-M {
+  grid-area: social-M;
+}
+
+div#contacts {
+  grid-area: contacts;
+}
+
+div#Desserts_drinks {
+  grid-area: Desserts_drinks;
+}
+
+div#Entrees {
+  grid-area: Entrees;
+}
+div#appetizers {
+  grid-area: appetizers;
+}
+
+h1 {
+  text-align: center;
+  font-family: 'Krona One', sans-serif;
+  font-family: 'Merriweather', serif;
+  font-family: 'Anton', sans-serif;
+}
+
+h2 {
+text-align: center;
+}
+
+h3 {
+text-align: center;
+}
+
+h4 {
+
+}
+
+h5 {
+
+}
+
+h6 {
+
+}
+
+p {
+text-align: center;
+line-height: 1.6;
+color: #000000
+
+}
+
+ol {
+
+}
+
+ul {
+
+}
+
+li {
+
+}
+
+table {
+
+}
+
+caption {
+
+}
+
+tr {
+
+}
+
+th {
+
+}
+
+td {
+
+}
+
+img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+      margin: auto;
+      text-align: center;
+  }
+  img.right {
+    float: right;
+    margin-left: 20px;
+  }
+
+img.left {
+    float:left;
+    margin-right: 20px;
+    display: block;
+}
+
+img.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.topnav a {
+  float: center;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: #000000;
+}
+
+.topnav a.active {
+  background-color: #890c10;
+  color: #ffffff;
+}
+
+a:link {
+
+}
+
+a:visited {
+
+}
+
+a:hover {
+
+}
+
+a:active {
+
+}
